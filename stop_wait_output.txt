@@ -1,0 +1,134 @@
+login as: dgs32
+
+   University of Pittsburgh
+Department of Computer Science
+
+Unauthorized access prohibited
+
+dgs32@linux.cs.pitt.edu's password:
+Last login: Fri Jul  3 11:32:16 2020 from sremote-10-195-74-1.vpn.pitt.edu
+
+       THIS SYSTEM IS FOR THE USE OF AUTHORIZED USERS ONLY.
+
+       Individuals using this computer system without authority, or in
+       excess of their authority, are subject to having all of their
+       activities on this system monitored and recorded by system
+       personnel.
+
+       In the course of monitoring individuals improperly using this
+       system, or in the course of system maintenance, the activities
+       of authorized users may also be monitored.
+
+       Anyone using this system expressly consents to such monitoring
+       and is advised that if such monitoring reveals possible
+       evidence of criminal activity, system personnel may provide the
+       evidence of such monitoring to law enforcement officials.
+
+[ritchie ~]: cd private
+[ritchie ~/private]: cd cs1652
+[ritchie ~/private/cs1652]: ls
+a.out       proj2    project2_gbn    project2_stop_wait
+output.txt  proj2.c  project2_gbn.c  project2_stop_wait.c
+[ritchie ~/private/cs1652]: gcc -std=c99 project2_stop_wait.c
+[ritchie ~/private/cs1652]: ./project2_stop_wait
+-----  Network Simulator Version 1.1 --------
+
+Enter the number of messages to simulate: 10
+Enter  packet loss probability [enter 0.0 for no loss]:0.1
+Enter packet corruption probability [0.0 for no corruption]:0.3
+Enter average time between messages from sender's layer5 [ > 0.0]:1000
+Enter TRACE:2
+
+EVENT time: 1870.573975,  type: 1, fromlayer5  entity: 0
+          TOLAYER3: packet being corrupted
+Sent from A: seq = 0, ack = 0, isACK = 0, checksum = 3232, aaaaaaaaaaaaaaaaaaaa
+
+EVENT time: 1876.039062,  type: 2, fromlayer3  entity: 1
+Received at B: seq = 0, ack = 0, isACK = 0, checksum = 3232, Zaaaaaaaaaaaaaaaaaaa
+Checksum error at B: seq = 0, ack = 0, isACK = 0, checksum = 3232, Zaaaaaaaaaaaaaaaaaaa
+
+EVENT time: 1878.220703,  type: 2, fromlayer3  entity: 0
+Received at A: seq = 0, ack = -1, isACK = 1, checksum = 0,
+
+EVENT time: 1880.241211,  type: 2, fromlayer3  entity: 1
+Received at B: seq = 0, ack = 0, isACK = 0, checksum = 3232, aaaaaaaaaaaaaaaaaaaa
+Accpeted at B: seq = 0, ack = 0, isACK = 0, checksum = 3232, aaaaaaaaaaaaaaaaaaaa
+          TOLAYER3: packet being corrupted
+
+EVENT time: 1884.708496,  type: 2, fromlayer3  entity: 0
+Received at A: seq = 0, ack = 0, isACK = 1, checksum = 0, Z
+
+EVENT time: 3512.483887,  type: 1, fromlayer5  entity: 0
+Sent from A: seq = 1, ack = 0, isACK = 0, checksum = 2827, bbbbbbbbbbbbbbbbbbbb
+
+EVENT time: 3521.912354,  type: 2, fromlayer3  entity: 1
+Received at B: seq = 1, ack = 0, isACK = 0, checksum = 2827, bbbbbbbbbbbbbbbbbbbb
+Accpeted at B: seq = 1, ack = 0, isACK = 0, checksum = 2827, bbbbbbbbbbbbbbbbbbbb
+
+EVENT time: 3529.375244,  type: 2, fromlayer3  entity: 0
+Received at A: seq = 0, ack = 1, isACK = 1, checksum = 0,
+
+EVENT time: 3618.799316,  type: 1, fromlayer5  entity: 0
+Sent from A: seq = 0, ack = 0, isACK = 0, checksum = 1e1e, cccccccccccccccccccc
+
+EVENT time: 3621.529541,  type: 2, fromlayer3  entity: 1
+Received at B: seq = 0, ack = 0, isACK = 0, checksum = 1e1e, cccccccccccccccccccc
+Accpeted at B: seq = 0, ack = 0, isACK = 0, checksum = 1e1e, cccccccccccccccccccc
+          TOLAYER3: packet being corrupted
+
+EVENT time: 3623.895996,  type: 2, fromlayer3  entity: 0
+Received at A: seq = 0, ack = 0, isACK = 1, checksum = 0, Z
+
+EVENT time: 4736.499023,  type: 1, fromlayer5  entity: 0
+          TOLAYER3: packet being lost
+Sent from A: seq = 1, ack = 0, isACK = 0, checksum = 1413, dddddddddddddddddddd
+
+EVENT time: 4910.704102,  type: 1, fromlayer5  entity: 0
+
+EVENT time: 5736.499023,  type: 0, timerinterrupt   entity: 0
+
+EVENT time: 5740.657715,  type: 2, fromlayer3  entity: 1
+Received at B: seq = 1, ack = 0, isACK = 0, checksum = 1413, dddddddddddddddddddd
+Accpeted at B: seq = 1, ack = 0, isACK = 0, checksum = 1413, dddddddddddddddddddd
+          TOLAYER3: packet being lost
+
+EVENT time: 6736.499023,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being corrupted
+
+EVENT time: 6742.336914,  type: 2, fromlayer3  entity: 1
+Received at B: seq = 1, ack = 0, isACK = 0, checksum = 1413, Zddddddddddddddddddd
+
+EVENT time: 6874.411133,  type: 1, fromlayer5  entity: 0
+
+EVENT time: 7736.499023,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being lost
+
+EVENT time: 8736.499023,  type: 0, timerinterrupt   entity: 0
+
+EVENT time: 8737.557617,  type: 2, fromlayer3  entity: 1
+Received at B: seq = 1, ack = 0, isACK = 0, checksum = 1413, dddddddddddddddddddd
+
+EVENT time: 8820.911133,  type: 1, fromlayer5  entity: 0
+
+EVENT time: 8888.997070,  type: 1, fromlayer5  entity: 0
+
+EVENT time: 9736.499023,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being corrupted
+
+EVENT time: 9742.078125,  type: 2, fromlayer3  entity: 1
+Received at B: seq = 1, ack = 0, isACK = 0, checksum = 1413, Zddddddddddddddddddd
+
+EVENT time: 9760.524414,  type: 1, fromlayer5  entity: 0
+
+EVENT time: 10736.499023,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being corrupted
+
+EVENT time: 10738.254883,  type: 2, fromlayer3  entity: 1
+Received at B: seq = 1, ack = 0, isACK = 0, checksum = 1413, Zddddddddddddddddddd
+
+EVENT time: 11489.693359,  type: 1, fromlayer5  entity: 0
+
+EVENT time: 11736.499023,  type: 0, timerinterrupt   entity: 0
+ Simulator terminated at time 11736.499023
+ after sending 10 msgs from layer5
+[ritchie ~/private/cs1652]:
